@@ -1,0 +1,28 @@
+1688731454182	geckodriver	INFO	Listening on 127.0.0.1:62154
+1688731457232	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62155" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\lamij\\AppData\\Local\\Temp\\rust_mozprofileH1zjHW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1688731458377	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1688731458388	Marionette	INFO	Listening on port 62167
+Read port: 62167
+WebDriver BiDi listening on ws://127.0.0.1:62155
+1688731458787	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62155/devtools/browser/8a53c5da-f668-44d0-aafd-c815bb658393
+JavaScript error: https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js, line 195: TypeError: url is undefined
+1688731465445	Marionette	INFO	Stopped listening on port 62167
+Dynamically enable window occlusion 1
+1688731608810	geckodriver	INFO	Listening on 127.0.0.1:62262
+1688731611858	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62263" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\lamij\\AppData\\Local\\Temp\\rust_mozprofileCab6RH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1688731612551	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1688731612558	Marionette	INFO	Listening on port 62272
+Read port: 62272
+WebDriver BiDi listening on ws://127.0.0.1:62263
+1688731612959	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62263/devtools/browser/9e513576-916b-4b2a-8433-a3ba45d21d27
+JavaScript error: https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js, line 195: TypeError: url is undefined
+1688731618405	Marionette	INFO	Stopped listening on port 62272
+Dynamically enable window occlusion 1
