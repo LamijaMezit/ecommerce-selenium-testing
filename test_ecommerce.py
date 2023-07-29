@@ -78,18 +78,22 @@ def test_correct_page():
 
 #move to Desktops
 
- desktops=driver.find_element(By.XPATH,'//a[text()="Desktops"]')
- action=ActionChains(driver)
+
+ desktops = driver.find_element(By.XPATH, '//a[text()="Desktops"]')
+ action = ActionChains(driver)
  action.move_to_element(desktops).perform()
+
  time.sleep(2)
- desktop=driver.find_element(By.XPATH, '//a[text()="Show AllDesktops"]')
+
+ desktop = driver.find_element(By.XPATH, "//a[@class='see-all']")
  desktop.click()
+
  time.sleep(1)
 
 
 #click on the Apple Cinema
 
- AC= driver.find_element(By.XPATH, '//a[text()="Apple Cinema 30"]')
+ AC= driver.find_element(By.XPATH, "//a[contains(@href, 'product_id=42')]")
  AC.click()
 
  time.sleep(2)
@@ -111,7 +115,7 @@ def test_correct_page():
 
 
 #year:2022 month:december
- while month_year.text != 'December 2022':
+ while month_year.text != 'December 2011':
   next_click.click()
   time.sleep(2)
 
@@ -125,6 +129,11 @@ def test_correct_page():
  time.sleep(1)
 
  driver.quit()
+
+ #checkout process
+
+ cart =driver.find_element_by_id('cart-total')
+ cart.click()
 
 
 
