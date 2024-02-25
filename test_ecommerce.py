@@ -1,4 +1,7 @@
+from asyncio import wait
 import random
+from ssl import Options
+from requests import options
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
@@ -10,11 +13,13 @@ from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.action_chains import ActionChains
 
 
+
+
 def test_correct_page():
  
- service = Service(executable_path=ChromeDriverManager().install())
- driver = webdriver.Chrome(service=service)
- wait = WebDriverWait(driver, timeout=60)
+ option = webdriver.ChromeOptions()
+ driver = webdriver.Chrome(options = option)
+ wait = WebDriverWait(driver, timeout=10)
 
  driver.get("https://tutorialsninja.com/demo/")
  driver.maximize_window()
@@ -115,12 +120,12 @@ def test_correct_page():
 
 
 #year:2022 month:december
- while month_year.text != 'December 2011':
+ while month_year.text != 'June 2011':
   next_click.click()
   time.sleep(2)
 
 #day 31
- calendar_date=driver.find_element_by_xpath('//td[text()="31"]')
+ calendar_date = driver.find_element(By.XPATH, '//td[text()="31"]')
  calendar_date.click()
  time.sleep(2)
 
@@ -131,11 +136,11 @@ def test_correct_page():
  driver.quit()
 
  #checkout process
+ cart = driver.find_element(By.ID, 'cart-total')
 
- cart =driver.find_element_by_id('cart-total')
  cart.click()
+ driver.quit() 
 
 
 
- 
  
